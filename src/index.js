@@ -34,13 +34,4 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-// Loop contínuo para manter a conexão ativa
-setInterval(
-  () => {
-    console.log('Mantendo a conexão ativa...');
-  },
-  5 * 60 * 1000,
-); // 5 minutos
 
-// Conectar o bot usando o token fornecido pelo Discord Developer Portal
-client.login(config.token);
