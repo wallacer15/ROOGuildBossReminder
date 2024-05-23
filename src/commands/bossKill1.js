@@ -10,7 +10,7 @@ module.exports = {
       return;
     }
 
-    message.reply(`${bossName} will be announced in 2 hours.`);
+    message.reply(`${bossName} will spawn in 2 hours.`);
 
     setTimeout(
       () => {
