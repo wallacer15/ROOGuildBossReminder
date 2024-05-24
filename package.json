@@ -13,6 +13,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"discord.js": "^14.15.2"
+		"discord.js": "^14.15.2",
+		"moment-timezone": "^0.5.45"
 	}
 }
