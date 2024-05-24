@@ -1,5 +1,5 @@
 // src/commands/bossKill2.js
-const { getFutureTimeUTC4Plus2Hours } = require('../utils');
+const { getFutureTimeUTC4Plus2Hours } = require('../utils/utils');
 
 module.exports = {
   name: 'bosskill2',
