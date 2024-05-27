@@ -1,6 +1,5 @@
 // src/events/messageCreate.js
-const bossKill1Command = require('../commands/bossKill1');
-const bossKill2Command = require('../commands/bossKill2');
+const bossKillCommand = require('../commands/bossKill');
 
 module.exports = {
   name: 'messageCreate',
@@ -10,10 +9,8 @@ module.exports = {
     const args = message.content.slice(1).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
-    if (commandName === 'bossKill1') {
-      bossKill1Command.execute(message, args, client.config.roleId);
-    } else if (commandName === 'bossKill2') {
-      bossKill2Command.execute(message, args, client.config.roleId);
+    if (commandName === 'bosskill') {
+      bossKillCommand.execute(message, args, client.config.roleId);
     }
   },
 };

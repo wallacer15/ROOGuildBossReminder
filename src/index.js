@@ -1,7 +1,6 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const config = require('../config/config');
-const bossKill1 = require('./commands/bossKill1');
-const bossKill2 = require('./commands/bossKill2');
+const bossKill = require('./commands/bossKill');
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
@@ -10,8 +9,7 @@ const client = new Client({
 client.commands = new Map(); // Definindo o objeto commands como um Map vazio
 
 // Adicionar cada comando manualmente ao objeto commands
-client.commands.set(bossKill1.name, bossKill1);
-client.commands.set(bossKill2.name, bossKill2);
+client.commands.set(bossKill.name, bossKill);
 
 client.config = config;
 

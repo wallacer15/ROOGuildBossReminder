@@ -2,7 +2,7 @@
 const { getFutureTimeUTC4Plus2Hours } = require('../utils/utils');
 
 module.exports = {
-  name: 'bosskill1',
+  name: 'bosskill',
   description: 'Defines reminder for Guild Dungeon boss respawn',
   execute(message, args, roleId) {
     const bossName = args[0];
