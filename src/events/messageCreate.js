@@ -11,10 +11,13 @@ module.exports = {
 
     if (commandName === 'bosskill') {
       if(message.channel.name === 'guild-dungeon-mvp'){
-       return bossKillCommand.execute(message, args, client.config.roleId);
+        bossKillCommand.execute(message, args, client.config.roleId);
       }
       if(message.channel.name === 'guild-dungeon-mvp-whaies'){
         bossKillCommand.execute(message, args, 1245442094957330532);
+      }
+      else{
+        return
       }
       
     }
