@@ -25,7 +25,13 @@ client.on('messageCreate', async (message) => {
   const command = client.commands.get(commandName);
 
   try {
-    command.execute(message, args, client.config.roleId);
+    if(message.channel.name === 'guild-dungeon-mvp'){
+      command.execute(message, args, client.config.roleId);
+    }
+    if(message.channel.name === 'guild-dungeon-mvp-whaies'){
+      command.execute(message, args, 1245442094957330532);
+    }
+    
   } catch (error) {
     console.error(error);
     message.reply('Ocorreu um erro ao executar o comando!');
