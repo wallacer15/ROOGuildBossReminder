@@ -12,7 +12,7 @@ module.exports = {
       return;
     }
 
-    message.reply(`${bossName} will spawn in 2 hours, ${futureTime} ingame time`);
+    message.reply(`${bossName} will spawn in 1 hour, ${futureTime} ingame time`);
 
     setTimeout(
       () => {
@@ -23,7 +23,7 @@ module.exports = {
           message.channel.send(`O cargo com ID ${roleId} não foi encontrado.`);
         }
       },
-      2 * 60 * 60 * 1000,
-    ); // 2 horas em milissegundos
+      1 * 60 * 60 * 1000,
+    ); 
   },
 };
